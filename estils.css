@@ -1,0 +1,303 @@
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    background-color: rgb(231, 226, 226);
+    padding: 1em;
+}
+
+.logo{
+    width: 5%;
+}
+
+.enlaces a{
+    text-decoration: none;
+    color: black;
+    margin-right: 5em;
+}
+
+.enlaces i{
+    margin-right: .5em;
+}
+
+.redes_sociales a{
+    margin: .4em;
+    color: black;
+}
+
+header{
+    background-color: rgb(231, 226, 226);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+header img{
+    width: 1200px;
+    height: 30vh;
+}
+
+.titulo-header{
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    transform: translate(-47%, -50%);
+    color: rgba(209, 142, 17, 0.7); 
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+section{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    background-color: rgb(192, 190, 190);
+}
+
+section article{
+    width: 46%;
+}
+
+aside{
+    width: 25%;
+    background-color: rgb(192, 190, 190); 
+}
+
+aside p{
+    text-align: center;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.title-aside{
+    font-weight: bold;
+    font-size: 1.2em;   
+}
+
+.grid-article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    position: relative;
+    display: inline-block;
+    margin: 1%;
+    background-color: rgb(235, 245, 245);
+    padding: 1%;
+    color: gray;
+}
+
+article .fecha{
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    transform: translate(7%, -30%);
+    color: yellow;
+}
+
+article img{
+    width: 100%;
+    height: 250px;
+}
+
+article h2{
+    margin-top: 0;
+    background-color: rgb(236, 172, 197);
+    padding:.3em;
+    color: black;
+}
+
+article a{
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover{
+color: blue;
+}
+
+.colum-article p{
+   margin-top: 0; 
+}
+
+.footer-section p{
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: rgb(224, 220, 220);
+    padding: .5%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+@media all and (max-width: 1044px){ 
+
+    article .fecha{
+
+        transform: translate(7%, -130%);
+    }
+
+     header img{
+         width: 1044px;
+         height: 20vh;
+     }
+
+     .titulo-header{
+        top: 70%;
+     }
+}
+
+
+@media all and (max-width: 908px){ 
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    aside{
+        margin-top: 1%;
+        width: 100%;
+    }
+
+    header h1{
+        font-size: 1.4em;
+    }
+
+    nav{
+        width: 100%;
+        justify-content: center;   
+    }
+
+    .logo{
+        margin-right: 2%;
+    }
+
+    header img{
+        width: 908px;
+        height: 15vh;
+    }
+
+    .enlaces a{
+        margin-right: 3em;
+    }
+
+    .enlaces i{
+        margin-right: .4em;
+    
+    }
+
+    article .fecha{
+        transform: translate(7%, -10%);
+    }
+}
+
+
+
+
+@media all and (max-width: 720px){ 
+
+    .enlaces a{
+        margin-right: 1em;
+    }
+    
+    .enlaces i{
+        margin-right: .2em;
+    }
+
+    article .fecha{
+        transform: translate(7%, -120%);
+    }
+
+   header img{
+       width: 720px;
+   }
+
+   .titulo-header{
+       top: 70%;
+   }
+}
+
+ @media all and (max-width: 564px){ 
+
+     article .fecha{
+        transform: translate(7%, -170%); 
+    }
+    
+    header img{
+         width: 564px;
+    }
+}
+
+
+ @media all and (max-width: 457px){ 
+
+     article .fecha{
+         transform: translate(7%, -400%); 
+    }
+
+    nav{
+        justify-content: flex-start;
+    }
+        
+    header img{
+         width: 457px;
+    }
+
+    .titulo-header{
+        top: 60%;
+    }
+
+    .enlaces a{
+        margin-right: .1em;
+    }
+    .enlaces i{
+        margin-right: .2em; 
+    }
+ }
+
+ @media all and (max-width: 457px){ 
+
+    .redes_sociales{
+        display: none;
+    }
+ }
+
+ @media all and (max-width: 396px){ 
+
+    article .fecha{
+         transform: translate(7%, -500%);
+    }
+
+    header img{
+          width: 396px;
+    }
+ }
+
+ @media all and (max-width: 376px){ 
+
+    article .fecha{
+        transform: translate(7%, -600%);
+    }
+
+    header img{
+        width: 375px;
+    }
+}
