@@ -1,14 +1,16 @@
 body{
     max-width: 1200px;
     margin: auto;
+    
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     background-color: rgb(231, 226, 226);
+    /* padding: 1em; */
     padding: 1em;
 }
 
@@ -35,7 +37,7 @@ header{
     background-color: rgb(231, 226, 226);
     position: relative;
     display: inline-block;
-    text-align: center;
+    text-align: center;  
 }
 
 header img{
@@ -55,6 +57,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 1%;
+    
 }
 
 section{
@@ -62,6 +65,7 @@ section{
     width: 75%;
     flex-direction: column;
     background-color: rgb(192, 190, 190);
+    padding: 1em;
 }
 
 section article{
